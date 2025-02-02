@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Introduction to Calculus</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="Chapter1_script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Chapter 1: Relating Everything</h1>
+    </header>
+    <main>
+        <section class="chapter-content">
+            <!--introduction-->
+            <p style="font-family: 'Georgia', serif; font-size: 18px; line-height: 1.6; text-align: justify; color: #333333; margin: 20px 0;">
+                As humans—or as sapiens, mammals, animals, living organisms, or simply as a part of the universe—we sometimes think about things that seem to have no proper meaning and yet feel profoundly significant. Take naming things, for example. I was named "Sabbir." It's fascinating that someone could associate a sound like "sa-bee-r" with me, or say "stone" and refer to countless objects that may or may not resemble each other.
+            </p>
+            <p style="font-family: 'Georgia', serif; font-size: 18px; line-height: 1.6; text-align: justify; color: #333333; margin: 20px 0;">
+                I can’t help but foolishly push beyond this and say that we can relate other things too. For instance, you relate “mango” to “sugar” by saying, “A mango (if ripe) tastes sweet, like sugar.” That’s interesting to notice, but for the key takeaway is that you’ve created a relationship between “mango” and “sugar.”
+            </p> 
+            <!--can you relate exercise-->
+            <div class="can-you">
+                <h2>Can You</h2>
+                <div class="question" data-question-text="relate Sun to Light, Cloud to Sky and Love to Life?" data-question-math="" data-solution="One can’t exist withouth the other">
+                    <p class="question-text"></p>
+                    <p class="question-math"></p>
+                    <button class="solution-btn" onclick="showSolution(this)">See Solution</button>
+                    <div class="solution" style="display:none;"></div>
+                </div>     
+            </div>
+            <!--Relation with numbers-->
+            <p style="font-family: 'Georgia', serif; font-size: 18px; line-height: 1.6; text-align: justify; color: #333333; margin: 20px 0;">
+                In fact, you can relate anything to anything else that your brain can imagine (and your brain can even think about things you can’t imagine—you’re probably imagining that now).
+            </p>
+            <p style="font-family: 'Georgia', serif; font-size: 18px; line-height: 1.6; text-align: justify; color: #333333; margin: 20px 0;">
+                Since this book is for the maths-guys, let’s deal with something that feels like home to them—their natural habitat: numbers.
+            </p>
+            <p style="font-family: 'Georgia', serif; font-size: 18px; line-height: 1.6; text-align: justify; color: #333333; margin: 20px 0;">
+                Now, let’s relate some numbers:
+            </p>
+            <p style="text-align: center;">
+                $1\ to\ 2,\ 2\ to\ 4,\ 3\ to\ 6\ and\ 4\ to\ 8$
+            </p>
+            <p style="font-family: 'Georgia', serif; font-size: 18px; line-height: 1.6; text-align: justify; color: #333333; margin: 20px 0;">
+                Notice anything? The numbers are doubled! <br />
+                It is simple to write down for four relations now think writing down for a hundred terms!   
+            </p>
+
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">1 to 2</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">2 to 4</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">3 to 6</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">4 to 8</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">5 to 10</td>
+                </tr>
+                <tr>
+                    <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">6 to 12</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">7 to 14</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">8 to 16</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">9 to 18</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">10 to 20</td>
+                </tr>
+                <tr>
+                    <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">11 to 22</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">12 to 24</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">13 to 26</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">14 to 28</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">15 to 30</td>
+                </tr>
+                <tr>
+                    <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">16 to 32</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">17 to 34</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">18 to 36</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">19 to 38</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">20 to 40</td>
+                </tr>
+                <tr>
+                    <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">21 to 42</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">22 to 44</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">23 to 46</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">24 to 48</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">25 to 50</td>
+                </tr>
+            </table>
+
+            <p style="font-family: 'Georgia', serif; font-size: 18px; line-height: 1.6; text-align: justify; color: #333333; margin: 20px 0;">
+                Wooooooaow!!! Only a mad person would write all of this down.<i>It wastes both time and space. Instead, we can express it in a much smarter way:</i> <br />
+               
+            </p>
+
+            <p style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <i>For all numbers $a$ from one to $a$ hundred relate $a$ to $2 \times$ $a$.</i>
+            </p>
+
+        </section>
+        <div class="navigation-buttons">
+            <button onclick="window.location.href='Mainpage.html'">Back to Book Main Page</button>
+            <button onclick="window.location.href='Chapter2.html'">Next Chapter</button>
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sabbir Mondal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+Calculus in the words of a beginner
+
+To: 
+---
+
+Preface:
+---
+
+Flow of chapters: 
+
+01. Relating Everything (introduction to relations and function discreetly) 
+|
+02. Working with nicer relations (more about functions and notations)
+	|
+03. How far apart? (the ideas of differencing Δf(n) and making observations)
+	| 
+04. Putting them closer! (the ideas of sum Σf(n) and that it is the reverse of differencing ΔΣf(n)=f(n))
+	|
+05. Pictures of sums and differences.
+	| 
+06. Differences together. (Difference equations and solving them with the Gregory-Newton’s interpolation)
+	|
+07. The vast realm of all between 0 and 1. (Introduction to continues things and the d-notation)
+	|
+08. A Mile stone (computing the differential coefficient and drawing down principles)
+	| 
+09. Growing fast and really slow. (the exponential function and the logarithmic functions and their derivatives with the first look at infinite sum)
+	| 
+10. sin, cos, tan and more! (trigonometric functions) 
+	| 
+11. What’s the picture? (graphical meaning of differencing)
+	| 
+12. Building from ruins! (All integration and integration as the inverse of differentiation and setting rules)
+	|
+--- Making a table of derivatives and integration of functions. ---
+	| 
+13. the sleeping 8 symbol. (infinite-series, what are limits) 
+	|
+14. Technical stuff. (formalizing with limits, continuity and differentiability)
+	|
+15. the epsilon-delta proofs. 
+	|
+16. Turning things algebraic. (Taylor series)  
+	|
+17. The swamps of differential equations. 
+	| 
+18. Same but in 2-D and beyond (partial-differentiation)
+	| 
+19. What is the inverse then? (multiple integrals)
+	| 
+20. A start from the end :) (quick intro to real analysis the Reimann integral)
+
+
+
+
+Solutions:
+
+
+
+Epilogue: 
+  
+ 
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Introduction to Calculus</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="Chapter1_script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Chapter 1: Introduction to Calculus</h1>
+    </header>
+    <main>
+        <section class="chapter-content">
+            <p><strong>Introduction:</strong> In this chapter, we will explore the basics of calculus. Calculus is the mathematical study of continuous change...</p>
+            <div class="math-equation">
+                <p>Here is an important calculus equation:</p>
+                <p id="math"></p>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        document.getElementById('math').innerHTML = katex.renderToString("f(x) = \\int_{a}^{b} x^2 \\,dx");
+                    });
+                </script>
+            </div>
+            <div class="interactive-graph">
+                <p>Interactive Graph:</p>
+                <div id="graph"></div>
+                <script>
+                    var trace1 = {
+                        x: [1, 2, 3, 4, 5],
+                        y: [1, 4, 9, 16, 25],
+                        mode: 'lines+markers',
+                        type: 'scatter'
+                    };
+                    var data = [trace1];
+                    Plotly.newPlot('graph', data);
+                </script>
+            </div>
+            <div class="image-container">
+                <p>Here is an illustration:</p>
+                <img src="calculus-illustration.jpg" alt="Calculus Illustration">
+            </div>
+            <div class="can-you">
+                <h2>Can You?</h2>
+                <div class="question" data-question-text="1. Solve the integral of " data-question-math="$x^2$" data-solution="The integral of \(x^2\) from \(a\) to \(b\) is \(\frac{b^3}{3} - \frac{a^3}{3}\).">
+                    <p class="question-text"></p>
+                    <p class="question-math"></p>
+                    <button class="solution-btn" onclick="showSolution(this)">See Solution</button>
+                    <div class="solution" style="display:none;"></div>
+                </div>
+                  
+            </div>
+            <div class="take-away">
+                <h2>Take Away</h2>
+                <p>In this chapter, you learned about the basics of calculus, including important concepts like integration and graph plotting.</p>
+            </div>
+            <p><a href="#footnote1">[1]</a> Calculus is fundamental to understanding the physical world...</p>
+            <div class="footnotes">
+                <p id="footnote1"><strong>Footnote 1:</strong> Calculus is essential for studying changes, whether they are physical or abstract...</p>
+            </div>
+        </section>
+        <div class="navigation-buttons">
+            <button onclick="window.location.href='Mainpage.html'">Back to Book Main Page</button>
+            <button onclick="window.location.href='Chapter3.html'">Next Chapter</button>
+            <button onclick="window.location.href='Chapter1.html'">Previous Chapter</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sabbir Mondal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
