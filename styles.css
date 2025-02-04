@@ -72,6 +72,7 @@ footer {
     font-style: italic;
 }
 .take-away {
+    
     background-color: #fff0e1;
     padding: 1em;
     border-left: 4px solid #cc6600;
@@ -157,7 +158,7 @@ a:hover {
 
 .common-para {
     font-family: 'Georgia', serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: justify;
     color: #333333;
