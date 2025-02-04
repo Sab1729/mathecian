@@ -53,22 +53,8 @@
                 It is simple to write down for four relations now think writing down for fifty terms!   
             </p>
 
-            <table style="width: 100%; border-collapse: collapse; font-family: 'Courier New', Courier, monospace;">
-                <tr>
-                    <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">1 to 2</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">2 to 4</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">3 to 6</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">4 to 8</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">5 to 10</td>
-                </tr>
-                <tr>
-                    <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">6 to 12</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">7 to 14</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">8 to 16</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">9 to 18</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">10 to 20</td>
-                </tr>
-                <tr>
-                    <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">11 to 22</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">12 to 24</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">13 to 26</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">14 to 28</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">15 to 30</td>
-                </tr>
-                <tr>
-                    <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">16 to 32</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">17 to 34</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">18 to 36</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">19 to 38</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">20 to 40</td>
-                </tr>
-                <tr>
-                    <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">21 to 42</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">22 to 44</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">23 to 46</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">24 to 48</td> <td style="border-left: 1px solid black; border-right: 1px solid black; padding: 8px; text-align: center;">25 to 50</td>
-                </tr>
+            <table class="table">
+                <tbody id="table-body"></tbody>
             </table>
 
             <p style="font-family: 'Georgia', serif; font-size: 18px; line-height: 1.6; text-align: justify; color: #333333; margin: 20px 0;">
@@ -90,5 +76,23 @@
     <footer>
         <p>&copy; 2025 Sabbir Mondal. All rights reserved.</p>
     </footer>
+
+
+    <script>
+        const rows = 5;
+        const cols = 5;
+        const tbody = document.getElementById("table-body");
+
+        for (let i = 0; i < rows; i++) {
+            const tr = document.createElement("tr");
+            for (let j = 0; j < cols; j++) {
+                const td = document.createElement("td");
+                td.className = "table-cell";
+                td.textContent = `${i * cols + j + 1} to ${(i * cols + j + 1) * 2}`;
+                tr.appendChild(td);
+            }
+            tbody.appendChild(tr);
+        }
+    </script>
 </body>
 </html>
