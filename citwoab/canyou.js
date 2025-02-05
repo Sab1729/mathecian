@@ -23,24 +23,12 @@ document.addEventListener("DOMContentLoaded", function() {
     MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 });
 
-// Function to handle showing and hiding solutions
 function showSolution(button) {
     var solutionElement = button.nextElementSibling;
-    var solutionTex = solutionElement.getAttribute('data-solution-tex');
+    var solutionTex = button.parentElement.getAttribute('data-solution');
 
-    // Split the solution into text and LaTeX math (if any)
-    var solutionParts = solutionTex.split(/(\$[^$]+\$)/g);  // Split around inline LaTeX
-    
-    // Build the solution HTML, keeping plain text and LaTeX separate
-    var formattedSolution = solutionParts.map(function(part) {
-        if (part.match(/\$[^$]+\$/)) {
-            // This part is LaTeX, render it with MathJax
-            return "$$" + part.replace(/\$/g, "") + "$$";
-        } else {
-            // This part is plain text, keep it as is
-            return part;
-        }
-    }).join('');
+    // Replace newlines with <br> tags and handle LaTeX
+    var formattedSolution = solutionTex.replace(/\n/g, '<br>').replace(/\$(.+?)\$/g, '$$$1$$');
 
     // Toggle visibility of solution
     if (solutionElement.style.display === "none" || solutionElement.style.display === "") {
@@ -51,3 +39,4 @@ function showSolution(button) {
         solutionElement.style.display = "none";  // Hide solution
     }
 }
+
