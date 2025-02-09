@@ -1,35 +1,40 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
 }
+
 header {
     background-color: #0044cc;
     color: white;
     padding: 1em;
     text-align: center;
 }
+
 .author-info {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1em 0;
 }
+
 .author-photo {
     border-radius: 50%;
     width: 50px;
     height: 50px;
     margin-right: 10px;
 }
+
 .author-info a {
     color: beige;
     text-decoration: none;
 }
+
 main {
     padding: 2em;
 }
+
 footer {
     background-color: #0044cc;
     color: white;
@@ -39,31 +44,63 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 .book-info {
     background-color: white;
     padding: 2em;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .preface {
     background-color: #e6f7ff;
-    padding: 1em;
+    padding: 1.5em;
     border-left: 4px solid #0044cc;
     margin-bottom: 1.5em;
+    font-style: italic;
 }
+
 .chapter-content {
     background-color: white;
     padding: 2em;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
 }
+
+.chapter-content h1 {
+    font-family: 'Georgia', serif;
+    color: #0044cc;
+    border-bottom: 2px solid #0044cc;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.chapter-content h2 {
+    font-family: 'Georgia', serif;
+    color: #cc0066;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.chapter-content p {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333333;
+    margin: 20px 0;
+}
+
 .interactive-graph {
     margin: 2em 0;
 }
+
 .image-container img {
     max-width: 100%;
     height: auto;
 }
+
 .can-you {
     background-color: #f9e6f3;
     padding: 1em;
@@ -71,55 +108,64 @@ footer {
     margin-top: 1.5em;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .take-away {
-    
     background-color: #fff0e1;
     padding: 1em;
     border-left: 4px solid #cc6600;
     margin-top: 1.5em;
     font-style: italic;
 }
+
 .footnotes {
     background-color: #f9f9f9;
     padding: 1em;
     border-left: 4px solid #cccccc;
     margin-top: 1.5em;
 }
+
 .navigation-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 1.5em;
 }
+
 button {
     display: block;
     margin: 1em 0;
     padding: 0.5em 1em;
-    background-color: #0044cc;
+    background-color: #156be3;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #003399;
 }
+
 .solution-btn {
     margin-top: 0.5em;
     background-color: #cc0066;
     border: 1px solid #99004d;
 }
+
 .solution {
     padding: 1em;
     border: 1px solid #ccc;
     margin-top: 1em;
 }
+
 a {
     color: green;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 .book-list ul {
     list-style: none;
     padding: 0;
@@ -127,16 +173,19 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .book-list li {
     margin: 1em;
     flex: 1 0 200px;
     text-align: center;
 }
+
 .book-list img {
     max-width: 150px;
     display: block;
     margin: 0 auto;
 }
+
 @media (max-width: 600px) {
     .book-info, .chapter-content {
         padding: 1em;
@@ -145,15 +194,6 @@ a:hover {
         width: 40px;
         height: 40px;
     }
-}
-
-
-.preface {
-    background-color: #e6f7ff;
-    padding: 1.5em;
-    border-left: 4px solid #0044cc;
-    margin-bottom: 1.5em;
-    font-style: italic;
 }
 
 .common-para {
@@ -171,6 +211,7 @@ a:hover {
     padding: 8px;
     text-align: center;
 }
+
 .table {
     width: 100%;
     border-collapse: collapse;
